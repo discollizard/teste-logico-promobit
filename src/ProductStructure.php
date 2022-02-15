@@ -32,10 +32,12 @@ class ProductStructure
 
             $colorName = $entryExploded[0];
 
+            //adding if/else safeguards instead of conventional structures to avoid excessive identation and confusing code
             if(isset($colorSizeArrayFormatted[$colorName])){
                 $index++;
                 continue;
             }
+
             $colorSizeArrayFormatted[$colorName] = [];
 
             while($index < $colorSAULength){
